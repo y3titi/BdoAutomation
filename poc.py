@@ -9,8 +9,9 @@ import pyttsx3
 
 #musa awak grind:
 entries = [ 
-            {'Path': ".\Ressources\Class\Awak\Musa\EBuff.bmp", 'MustBePresent': False, 'Counter': 0, 'tts': "utilise ton iBuff", 'confidence_percentage': 0.85, 'ReminderFrequency': 2},
-            {'Path': ".\Ressources\Common\Rage\Rage100.bmp", 'MustBePresent': False, 'Counter': 0, 'tts': "utilise ta rage", 'confidence_percentage': 0.97, 'ReminderFrequency': 2},
+            {'Path': ".\Ressources\Class\Awak\Musa\EBuff.bmp", 'MustBePresent': False, 'Counter': 0, 'tts': "utilise ton iiBoeuf", 'confidence_percentage': 0.85, 'ReminderFrequency': 2},
+            {'Path': ".\Ressources\Common\Rage\Rage100v2.bmp", 'MustBePresent': False, 'Counter': 0, 'tts': "utilise ta rage", 'confidence_percentage': 0.97, 'ReminderFrequency': 10},
+            {'Path': ".\Ressources\Common\LootScroll2.bmp", 'MustBePresent': True, 'Counter': 0, 'tts': "Loot Scroll absent", 'confidence_percentage': 0.85, 'ReminderFrequency': 10},
             ]
 
 # {'Path': ".\Ressources\Common\Buff\HarmoKama.bmp", 'MustBePresent': True, 'Counter': 0, 'tts': "Harmony Kama absent", 'confidence_percentage': 0.85, 'ReminderFrequency': 10},
@@ -18,20 +19,22 @@ entries = [
 #Lahn succ grind in kama area with agris
 entries = [ 
             {'Path': ".\Ressources\Class\Succ\Lahn\EBuff.bmp", 'MustBePresent': False, 'Counter': 0, 'tts': "utilise ton iBuff", 'confidence_percentage': 0.85, 'ReminderFrequency': 2},
-            
-            {'Path': ".\Ressources\Common\Rage\Rage100.bmp", 'MustBePresent': False, 'Counter': 0, 'tts': "utilise ta rage", 'confidence_percentage': 0.97, 'ReminderFrequency': 2},
+            {'Path': ".\Ressources\Common\Buff\HarmoKama.bmp", 'MustBePresent': True, 'Counter': 0, 'tts': "Harmony Kama absent", 'confidence_percentage': 0.85, 'ReminderFrequency': 10},
+            {'Path': ".\Ressources\Common\Rage\Rage100v2.bmp", 'MustBePresent': False, 'Counter': 0, 'tts': "utilise ta rage", 'confidence_percentage': 0.97, 'ReminderFrequency': 4},
             {'Path': ".\Ressources\Common\LootScroll2.bmp", 'MustBePresent': True, 'Counter': 0, 'tts': "Loot Scroll absent", 'confidence_percentage': 0.85, 'ReminderFrequency': 10},
             {'Path': ".\Ressources\Common\Agris.bmp", 'MustBePresent': True, 'Counter': 0, 'tts': "Agris désactivé", 'confidence_percentage': 0.85, 'ReminderFrequency': 10},
             {'Path': ".\Ressources\Common\Buff\PveMeal.bmp", 'MustBePresent': True, 'Counter': 0, 'tts': "PveMeal absent", 'confidence_percentage': 0.85, 'ReminderFrequency': 10},
             {'Path': ".\Ressources\Common\Buff\AttackChurchBuff.bmp", 'MustBePresent': True, 'Counter': 0, 'tts': "Attack Church absent", 'confidence_percentage': 0.85, 'ReminderFrequency': 10},
             {'Path': ".\Ressources\Common\Buff\DefenceChurchBuff.bmp", 'MustBePresent': True, 'Counter': 0, 'tts': "Defence Church absent", 'confidence_percentage': 0.85, 'ReminderFrequency': 10},
-            {'Path': ".\Ressources\Common\Buff\VellBuff.bmp", 'MustBePresent': True, 'Counter': 0, 'tts': "Vell absent", 'confidence_percentage': 0.85, 'ReminderFrequency': 10},
+            {'Path': ".\Ressources\Common\Buff\VellBuff.bmp", 'MustBePresent': True, 'Counter': 0, 'tts': "Vell absent", 'confidence_percentage': 0.85, 'ReminderFrequency': 15},
+            {'Path': ".\Ressources\Common\PetHungry.bmp", 'MustBePresent': False, 'Counter': 0, 'tts': "les familiers ont faim", 'confidence_percentage': 0.994, 'ReminderFrequency': 10},
+            {'Path': '.\Ressources\Map\oluns.bmp', 'MustBePresent': False, 'Counter': 0, 'tts': "tu es à oluns", 'confidence_percentage': 0.55, 'ReminderFrequency': 1},
             ]
 
-
+#entries = [ {'Path': ".\Ressources\Common\Rage\Rage100v2.bmp", 'MustBePresent': False, 'Counter': 0, 'tts': "utilise ta rage", 'confidence_percentage': 0.97, 'ReminderFrequency': 10},  ]
 
 #BDO must run on main screen (0,0) on left top and the resolution must be adapted:
-screeny=1080
+screeny=1080 #1440
 screenx=1920 #2560
 region = (0,0,screenx,screeny)
 
